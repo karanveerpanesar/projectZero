@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<!-- 
+References for 581 Project 0
+Changing background color when button clicked https://css-tricks.com/snippets/javascript/random-hex-color/ - random color per click
+onclick - https://www.w3schools.com/jsref/event_onclick.asp
+color-picker used to select the correct colors for Mario https://imagecolorpicker.com/
+Reference to design Mario Button - https://improveyourdrawings.com/2019/02/2-ways-to-draw-super-mario/
+Supermariofont that was used for letter M on Mario’s Cap - https://www.dafont.com/super-mario-256.font
+favicon file - https://www.favicon.cc/?action=icon&file_id=840289
+Sound of rain - https://www.zapsplat.com/?s=heavy+rain&post_type=music&sound-effect-category-id=
+Eyes follow mouse - https://www.youtube.com/watch?v=WqgKe3dcXxg
+
+-->
 <html lang="en">
     <head>
         <link rel="icon" href="favicon.ico">
@@ -9,8 +21,6 @@
         <title>Project 0</title>  
     </head>
     <body id="back">
-        <audio id="marioAudio" src="https://vgmsite.com/soundtracks/super-smash-bros.-melee-original-sound-version/vsamqawm/1-01%20Opening.mp3" preload="auto"></audio>
-        <audio id="snoring" src="snoring.mp3" preload="auto"></audio>
         <audio id="sleepmusic" src="rain.mp3" preload="auto"></audio>
         <section>
             <div id = "newColor" style="cursor:pointer" href="#" onclick="playAudio(), hide(), changeColor()"class="mario-face">
@@ -28,15 +38,11 @@
             <div class="mario-moustache"></div>
             <div class="mario-chin"></div>
             <div class="mario-nose"></div>
-            
         </div>
     </section>
 
     
         <script>
-            function draw(){
-                ellipse(255, 0, 150);
-            }
             function hide() {
                 var x = document.getElementById("eyes");
                 if (x.style.display == "none"){
@@ -67,18 +73,9 @@
             function playAudio() {
                 return music.paused ? music.play() : music.pause();
             };
-            /*music.currentTime = 0*/
-            
-           
-            
-            
-        
         </script>
     </body>
     <footer>
-
     </footer>
-
 <!-- Scripts-->
-
 </html>
